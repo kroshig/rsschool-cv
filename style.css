@@ -1,0 +1,160 @@
+
+* {
+  box-sizing: border-box;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  margin: 0;
+  font-family: Arial, sans-serif;
+  line-height: 1.6;
+  color: #222;
+  background-color: #f2f2f2;
+}
+
+.container {
+  max-width: 900px;
+  margin: 0 auto;
+  padding: 30px;
+  background-color: #ffffff;
+}
+
+.header {
+  padding-bottom: 25px;
+  border-bottom: 2px solid #333333;
+}
+
+.profile {
+  display: flex;
+  align-items: center;
+  gap: 30px;
+}
+
+.avatar {
+  width: 160px;
+  height: 160px;
+  object-fit: cover;
+  border-radius: 50%;
+}
+
+.profile-info h1 {
+  margin: 0;
+  font-size: 36px;
+}
+
+.profile-info p {
+  margin: 5px 0 0;
+  font-size: 20px;
+}
+
+.navigation {
+  margin-top: 25px;
+}
+
+.navigation ul {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  gap: 15px;
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
+.navigation a {
+  text-decoration: none;
+  font-weight: bold;
+}
+
+.navigation a:hover {
+  text-decoration: underline;
+}
+
+.section {
+  margin-top: 30px;
+}
+
+.section h2 {
+  margin-bottom: 15px;
+  padding-bottom: 5px;
+  border-bottom: 1px solid #cccccc;
+  font-size: 24px;
+}
+
+.section ul {
+  padding-left: 25px;
+}
+
+.section a {
+  color: #174ea6;
+}
+
+pre {
+  margin: 0;
+  padding: 20px;
+  overflow-x: auto;
+  background-color: #f4f4f4;
+  border: 1px solid #dddddd;
+}
+
+code {
+  font-family: Consolas, monospace;
+}
+
+.footer {
+  margin-top: 40px;
+  padding-top: 20px;
+  border-top: 2px solid #333333;
+}
+
+.footer-list {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
+.footer-list a {
+  text-decoration: none;
+}
+
+.footer-list img {
+  width: 100px;
+  height: auto;
+  display: block;
+}
+
+@media (max-width: 600px) {
+  .container {
+    padding: 20px;
+  }
+
+  .profile {
+    flex-direction: column;
+    text-align: center;
+  }
+
+  .profile-info h1 {
+    font-size: 28px;
+  }
+
+  .profile-info p {
+    font-size: 18px;
+  }
+
+  .navigation ul {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .footer-list {
+    flex-direction: column;
+    gap: 15px;
+  }
+}
+
